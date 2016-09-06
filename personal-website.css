@@ -1,0 +1,64 @@
+/* CSS declarations go here */
+body {
+  font-family: calibri;
+  font-size: 23px;
+}
+
+.basicTabs-container .tabs-list .tab-item.active {
+    font-size: 16px;
+}
+
+header {
+    font-size: 64px;
+    padding-bottom: 3%;
+}
+
+.leftContainer {
+    float:left;
+    padding-left: 7%;
+    width:45%;
+    bottom: 0px;
+}
+
+.rightContainer {
+    float:left;
+    width:40%;
+    bottom: 0px;
+}
+
+.homeContainer {
+    width:100%;
+    bottom: 0px;
+}
+
+#self {
+    max-width: 100%;
+}
+
+a:link, .pretend-link  {
+    color:SteelBlue;
+    background-color:transparent;
+    text-decoration:none;
+}
+
+a:visited {
+    color:SteelBlue;
+    background-color:transparent;
+    text-decoration:none;
+}
+a:hover {
+    color:gold;
+    background-color:transparent;
+    text-decoration:none;
+}
+
+a:active  {
+    color:yellow;
+    background-color:transparent;
+    text-decoration:none;
+}
+
+.tabs-list {
+    text-align: left;
+    width: 100%;
+}

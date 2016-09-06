@@ -1,0 +1,86 @@
+<head>
+    <title>Trevor Ta</title>
+    <link rel="icon" type="image/png" href="trevor.png" />
+</head>
+
+<body>
+    <div class="mainClass">
+      {{> myTab}}
+    </div>
+</body>
+
+<template name="myTab">
+    {{#basicTabs name="tabName" tabs=tabs}}
+    {{#tabContent slug="home"}}
+    <div class="homeContainer">
+        <div class="leftContainer">
+            <header><a onclick="toggleImage()">Trevor Ta</a></header>
+            <p><a onmouseover="toggleImage()" class="pretend-link">I</a> was <a href="https://www.google.com/maps/place/41%2F2+Ph%C3%BA+%C4%90%E1%BB%8Bnh,+ph%C6%B0%E1%BB%9Dng+16,+Qu%E1%BA%ADn+8,+H%E1%BB%93+Ch%C3%AD+Minh,+Vietnam/@10.724504,106.628771,208m/data=!3m2!1e3!4b1!4m2!3m1!1s0x31752de1d6d50e6d:0x54bd8dc3ec310802" target="_blank">born</a> and raised in Vietnam.</p>
+            <p>I <a href="https://www.google.com/maps/dir/Ho+Chi+Minh+City,+Ho+Chi+Minh,+Vietnam/Fullerton,+CA/@18.9742115,155.2485338,3z/data=!4m13!4m12!1m5!1m1!1s0x317529292e8d3dd1:0xf15f5aad773c112b!2m2!1d106.6296638!2d10.8230989!1m5!1m1!1s0x80dd2a74c381cb63:0xf59c53811e60ea4a!2m2!1d-117.9242966!2d33.8703596" target="_blank">moved</a> to the United States after high school.</p>
+            <p>I went to <a href="http://math.fullcoll.edu/amatyc/amatyc-winners.html" target="_blank">Fullerton College</a>.</p>
+            <p>I studied EECS at <a href="http://www.eecs.berkeley.edu/" target="_blank">UC Berkeley</a>.</p>
+            <p>I <a href="https://github.com/trevorta" target="_blank">code</a>.</p>
+            <p>I'm a software developer at <a href="http://www.oracle.com/index.html" target="_blank">Oracle</a>.</p>
+            <p>I am part of <a href="http://www.koinberkeley.org/" target="_blank">Koinonia</a>.</p>
+        </div>
+        <div class="rightContainer">
+            <img id="self" src="androidify.gif" onclick="toggleImage()" height="80%" width="80%">
+        </div>
+    </div>
+    {{/tabContent}}
+
+    {{#tabContent slug="projects"}}
+    <div class="homeContainer">
+        <div class="leftContainer">
+            <header>Projects</header>
+            <p><a href="http://todolist.tta.meteor.com/" target="_blank">Todo List (Meteor, JavaScript, MongoDB)</a>.</p>
+            <p><a href="http://copypaste.tta.meteor.com/" target="_blank">Copy-Paste Tool (Meteor, JavaScript, MongoDB)</a>.</p>
+            <p><a href="http://breath.tta.meteor.com/" target="_blank">Smile (Meteor, JavaScript, MongoDB)</a>.</p>
+            <p><a href="https://nameless-lake-5560.herokuapp.com/" target="_blank">Smile using Django (Python, Heroku, Postgres)</a>.</p>
+        </div>
+        <div class="rightContainer">
+            <img id="self" src="casual.gif" onclick="toggleImage()">
+        </div>
+    </div>
+    {{/tabContent}}
+
+    {{#tabContent slug="games"}}
+    <div class="homeContainer">
+        <div class="leftContainer">
+            <header>Games</header>
+            <p><a href="http://snake.tta.meteor.com/" target="_blank">Classic Snake Game using Meteor Framework (JavaScript, MongoDB)</a>.</p>
+            <p><a href="https://combating-snake.herokuapp.com/" target="_blank">Combating Snake using Django and Python (Group Project)</a>.</p>
+        </div>
+        <div class="rightContainer">
+            <img id="self" src="sport.gif" onclick="toggleImage()">
+        </div>
+    </div>
+    {{/tabContent}}
+
+    {{#tabContent slug="blogs"}}
+    <div class="homeContainer">
+        <div class="leftContainer">
+            <header>Blogs</header>
+            <p><a href="http://java.tta.meteor.com/" target="_blank">Simple Java Programs (Meteor, JavaScript, MongoDB)</a>.</p>
+        </div>
+        <div class="rightContainer">
+            <img id="self" src="formal.gif" onclick="toggleImage()">
+        </div>
+    </div>
+    {{/tabContent}}
+
+    {{/basicTabs}}
+</template>
+
+<template name="newBlog">
+    <form>
+  <fieldset>
+    <legend>Personal information:</legend>
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey"><br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+</template>
